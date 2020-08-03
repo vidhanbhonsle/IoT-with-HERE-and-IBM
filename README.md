@@ -1,6 +1,9 @@
 
 # Build a location aware IoT Ecosystem with HERE and IBM Cloud – Part 1
 
+### Introduction
+Purpose: To monitor a person's temperate and guide them to reach the nearest hospital in case of emergency. This will be done by tracking their location, sending them the routing instructions and showing the route on map.
+
 This code Pattern will help you understand how an IoT endpoint communicates with the IBM cloud using MQTT protocol over publish-subscribe architecture. You will get an overview of HERE Location Services and learn how to integrate HERE Location service with your IoT device. 
  
 ## Learning outcomes
