@@ -25,7 +25,7 @@
         // Obtain the default map types from the platform object:
         var defaultLayers = platform.createDefaultLayers();
 
-        // Get your current position from wego.here.com
+        // Your current position
         var myPosition = {lat: lat, lng: lng};
 
         // Instantiate (and display) a map object:
@@ -89,7 +89,7 @@ showRoute(hospitalPosition);
 }
 
 function showRoute(restPos){
-// console.log(restPos);
+//console.log(restPos);
 
 // Create the parameters for the routing request:
 let routingParameters = {
@@ -122,7 +122,7 @@ var onResult = function(result) {
     if(result.response.route) {
         // Pick the first route from the response:
         let route = result.response.route[0];
-        console.log(route);
+        //console.log(route);
         // Pick the route's shape:
         routeShape = route.shape;
 
