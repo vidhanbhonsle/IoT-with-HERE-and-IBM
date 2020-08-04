@@ -30,11 +30,11 @@ mqttc = mqtt.Client(client_id=clientId)
 mqttc.username_pw_set(authMethod, token)
 mqttc.connect(server, 1883, 60)
 
-def takeMeToHospital(temp,lat,lng):
-    #print("Values:",lat,lng,temp)    
+def takeMeToHospital(lat,lng):
+    #print("Values:",lat,lng)    
     @app.route('/')
     def map_func():
-        return render_template('map.html', lat=lat,lng=lng,temp=temp)
+        return render_template('map.html', lat=lat,lng=lng)
     
 while True:
     temperature = uniform(96.0,101.0)
@@ -44,7 +44,7 @@ while True:
     print ("Published: " + "%s;%s/%s "%(temperature,latitude,longitude))
     if(temperature>=99.1 or temperature<=96.9):
         print("Need attention!")
-        takeMeToHospital(temperature,latitude,longitude)
+        takeMeToHospital(latitude,longitude)
         break
     sleep(2)
 
