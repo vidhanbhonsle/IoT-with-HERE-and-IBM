@@ -73,6 +73,6 @@ To access any of the APIs, first get your credentials by signing up for a freemi
 
 ## Step 3: Generate apikeys
 
-[Folding in action](/img/RegistrationGif.gif)
+[Folding in action](https://github.com/vidhanbhonsle/Interactive-Map-Workshop/blob/master/img/RegistrationGif.gif)
 
 
