@@ -22,13 +22,17 @@
             apikey: "WEZsXlgadF5ZhPtPTsvYhuuSGSUoIt2mnR3orK5MxSU"   
         });
 
+        const lng = {{lng}};
+	    const lat = {{lat}};
+        const temp = {{temp}};
+
         // Obtain the default map types from the platform object:
 
         var defaultLayers = platform.createDefaultLayers();
 
         // Get your current position from wego.here.com
         
-        var myPosition = {lat: 12.95677, lng: 77.73164};
+        var myPosition = {lat: lat, lng: lng};
 
         // Instantiate (and display) a map object:
 
