@@ -4,8 +4,8 @@ from random import uniform
 from flask import Flask,render_template
 app = Flask(__name__)
 
-latitude = 12.9716
-longitude = 77.5946
+latitude = 12.95677
+longitude = 77.73164
 
 ORG = "pn74op"
 DEVICE_TYPE = "PC" 
@@ -46,9 +46,9 @@ while True:
         print("Need attention!")
         takeMeToHospital(temperature,latitude,longitude)
         break
-    sleep(5)
+    sleep(2)
+
+mqttc.loop()
 
 if __name__ == '__main__':
     app.run(debug = True) 
-
-mqttc.loop()
