@@ -66,5 +66,7 @@ On the final wizard screen, copy the device credentials, as you’ll not be able
 <img width="1437" alt="iotplatform-device-credentials" src="https://user-images.githubusercontent.com/16270682/89191794-e1f94880-d5bc-11ea-8979-2f40b2563038.png">
 
 
-
+## Step 2: Acquire credentials from HERE Developer Portal
+To access any of the APIs, first get your credentials by signing up for a freemium account
+[Register](https://developer.here.com/?utm_medium=dev_event&utm_source=community-sa) for a free developer account 
 
