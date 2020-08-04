@@ -1,6 +1,7 @@
 import paho.mqtt.client as mqtt
 from time import sleep
 from random import uniform
+from flask import Flask,render_template
 
 latitude = 12.9716
 longitude = 77.5946
@@ -30,6 +31,12 @@ mqttc.connect(server, 1883, 60)
 
 def takeMeToHospital(temp,lat,lng):
     print("Values:",lat,lng,temp)
+    app = Flask(__name__)
+
+    @app.route('/')
+    def map_func():
+        return render_template('map.html', lat=lat,lng=lng,temp=temp)
+
 
 while True:
     temperature = uniform(96.0,101.0)
@@ -43,3 +50,6 @@ while True:
     sleep(5)
     
 mqttc.loop()
+
+if __name__ == '__main__':
+    app.run(debug = True)   
