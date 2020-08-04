@@ -4,8 +4,9 @@ from random import uniform
 from flask import Flask,render_template
 app = Flask(__name__)
 
-latitude = 12.95677
-longitude = 77.73164
+#Can be acquired from wego.here.com
+latitude = YOUR_LATITUDE
+longitude = YOUR_LONGITUDE
 
 ORG = "ORG_ID"
 DEVICE_TYPE = "DEVICE_TYPE" 
