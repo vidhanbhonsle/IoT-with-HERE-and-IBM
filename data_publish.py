@@ -7,16 +7,10 @@ app = Flask(__name__)
 latitude = 12.95677
 longitude = 77.73164
 
-ORG = "pn74op"
-DEVICE_TYPE = "PC" 
-TOKEN = "wafMPutb(X-wubBR?9"
-DEVICE_ID = "10001"
-
-#host = "pn74op.messaging.internetofthings.ibmcloud.com"
-#clientId = "d:pn74op:PC:10001"
-#username = "use-token-auth"
-#password = "wafMPutb(X-wubBR?9"
-#topic = "iot-2/evt/status/fmt/json";
+ORG = "ORG_ID"
+DEVICE_TYPE = "DEVICE_TYPE" 
+TOKEN = "AITHENTICATION_TOKEN"
+DEVICE_ID = "DEVICE_ID"
 
 server = ORG + ".messaging.internetofthings.ibmcloud.com"
 topicTemp = "iot-2/evt/temperature/fmt/json"
