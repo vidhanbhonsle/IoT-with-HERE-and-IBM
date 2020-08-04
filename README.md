@@ -68,5 +68,6 @@ On the final wizard screen, copy the device credentials, as you’ll not be able
 
 ## Step 2: Acquire credentials from HERE Developer Portal
 To access any of the APIs, first get your credentials by signing up for a freemium account
-[Register](https://developer.here.com/?utm_medium=dev_event&utm_source=community-sa) for a free developer account 
+
+[Register](https://developer.here.com/events/community-sa) for a free developer account</br>
 
