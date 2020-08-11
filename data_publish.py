@@ -36,6 +36,14 @@ while True:
     mqttc.publish(topicTemp, temperature)
     mqttc.publish(topicLatitude, latitude)
     mqttc.publish(topicLongitude, longitude)
+    #Uncomment for Visualization
+    #payloadTemp = json.dumps({"temperature":temperature,"status":"working"})
+    #payloadLat = json.dumps({"Latitude":latitude,"status":"working"})
+    #payloadLng = json.dumps({"Longitude":longitude,"status":"working"})
+    #mqttc.publish(topicTemp, payloadTemp)
+    #mqttc.publish(topicLatitude, payloadLat)
+    #mqttc.publish(topicLongitude, payloadLng)
+    
     print ("Published: " + "%s;%s/%s "%(temperature,latitude,longitude))
     if(temperature>=99.1 or temperature<=96.9):
         print("Need attention!")
